@@ -9,13 +9,13 @@
  * Make an element shrink wrap its content.
  */
 
-[data-am-size~="fit"], [data-am-size~="fit-alt"] {
+[data-am-size~="fit"], [data-am-size~="fitAlt"] {
   display: block !important;
   float: left !important;
   width: auto !important;
 }
 
-[data-am-size~="fit-alt"] {
+[data-am-size~="fitAlt"] {
   float: right !important;
 }
 
@@ -38,7 +38,7 @@
  * In Chrome, Safari, and Firefox it results in undesired layout.
  */
 
-[data-am-size~="fill-alt"] {
+[data-am-size~="fillAlt"] {
   display: table-cell !important;
   max-width: 100% !important;
   width: 10000px !important;
