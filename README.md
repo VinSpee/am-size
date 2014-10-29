@@ -8,15 +8,14 @@ Read more about [SUIT CSS's design principles](https://github.com/suitcss/suit/)
 ## Installation
 
 * [npm](http://npmjs.org/): `npm install am-utils-size`
-* [Bower](http://bower.io/): `bower install am-utils-size`
 
 ## Available classes
 
 * `[data-am-size~="fit"]` - Make an element shrink wrap its content by floating left.
-* `[data-am--size~="fitAlt"]` - Make an element shrink wrap its content by floating right.
-* `[data-am-size~="fill"]` - Make an element fill the remaining space.
-* `[data-am-size~="fillAlt"]` - An alternative method to make an element fill the remaining space.
-* `[data-am-size~="full"]` - Make an element the width of its parent.
+* `[data-am--size~="palm:fitAlt"]` - Make an element shrink wrap its content by floating right.
+* `[data-am-size~="lap:fill"]` - Make an element fill the remaining space.
+* `[data-am-size~="desk:fillAlt"]` - An alternative method to make an element fill the remaining space.
+* `[data-am-size~="wide:full"]` - Make an element the width of its parent.
 * `[data-am-size~="XofY"]` (numerous) - Specify the proportional width of an object.
 
 `X` must be an integer less than `Y`.
@@ -25,21 +24,14 @@ Read more about [SUIT CSS's design principles](https://github.com/suitcss/suit/)
 
 ## TODO
 
-### Plugins
-
-Utilities that can be limited to specific Media Query breakpoints.
-
-* `u-sm-sizeXofY` - To use at the smallest Media Query breakpoint.
-* `u-md-sizeXofY` - To use at the medium Media Query breakpoint.
-* `u-lg-sizeXofY` - To use at the largest Media Query breakpoint.
-
 ### Configuration
 
 There are 3 Media Query breakpoints:
 
-* `--sm-viewport`
-* `--md-viewport`
-* `--lg-viewport`
+* `--palm`
+* `--lap`
+* `--desk`
+* `--wide`
 
 When using the [SUIT CSS preprocessor](https://github.com/suitcss/preprocessor),
 breakpoints can be configured using `@custom-media`. For example:

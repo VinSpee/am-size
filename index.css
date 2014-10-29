@@ -1,1 +1,5 @@
 @import "./lib/size.css";
+@import "./lib/size-palm.css";
+@import "./lib/size-lap.css";
+@import "./lib/size-desk.css";
+@import "./lib/size-wide.css";

@@ -1,0 +1,178 @@
+/**
+ * Sizing utilities
+ */
+
+/* Intrinsic widths
+   ========================================================================== */
+
+/**
+ * Make an element shrink wrap its content.
+ */
+
+@custom-media --palm screen and (min-width: 30em);
+
+[data-am-size~="palm:fit"], [data-am-size~="palm:fitAlt"] {
+  display: block !important;
+  float: left !important;
+  width: auto !important;
+}
+
+[data-am-size~="palm:fitAlt"] {
+  float: right !important;
+}
+
+
+/**
+ * Make an element fill the remaining space.
+ * N.B. This will hide overflow.
+ */
+
+[data-am-size~="palm:fill"] {
+  display: block !important;
+  overflow: hidden !important;
+  width: auto !important;
+}
+
+
+/**
+ * An alternative method to make an element fill the remaining space.
+ * N.B. Do not use if child elements might be wider than the remaining space.
+ * In Chrome, Safari, and Firefox it results in undesired layout.
+ */
+
+[data-am-size~="palm:fillAlt"] {
+  display: table-cell !important;
+  max-width: 100% !important;
+  width: 10000px !important;
+}
+
+/**
+ * Make an element the width of its parent.
+ */
+
+[data-am-size~="palm:full"] {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* Proportional widths
+   ========================================================================== */
+
+/**
+ * Specify the proportional width of an object.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
+ */
+
+[data-am-size~="palm:1of12"] {
+  width: calc(100% * 1 / 12) !important;
+}
+
+[data-am-size~="palm:1of10"] {
+  width: 10% !important;
+}
+
+[data-am-size~="palm:1of8"] {
+  width: 12.5% !important;
+}
+
+[data-am-size~="palm:1of6"],
+[data-am-size~="palm:2of12"] {
+  width: calc(100% * 1 / 6) !important;
+}
+
+[data-am-size~="palm:1of5"],
+[data-am-size~="palm:2of10"] {
+  width: 20% !important;
+}
+
+[data-am-size~="palm:1of4"],
+[data-am-size~="palm:2of8"],
+[data-am-size~="palm:3of12"] {
+  width: 25% !important;
+}
+
+[data-am-size~="palm:3of10"] {
+  width: 30% !important;
+}
+
+[data-am-size~="palm:1of3"],
+[data-am-size~="palm:2of6"],
+[data-am-size~="palm:4of12"] {
+  width: calc(100% * 1 / 3) !important;
+}
+
+[data-am-size~="palm:3of8"] {
+  width: 37.5% !important;
+}
+
+[data-am-size~="palm:2of5"],
+[data-am-size~="palm:4of10"] {
+  width: 40% !important;
+}
+
+[data-am-size~="palm:5of12"] {
+  width: calc(100% * 5 / 12) !important;
+}
+
+[data-am-size~="palm:1of2"],
+[data-am-size~="palm:2of4"],
+[data-am-size~="palm:3of6"],
+[data-am-size~="palm:4of8"],
+[data-am-size~="palm:5of10"],
+[data-am-size~="palm:6of12"] {
+  width: 50% !important;
+}
+
+[data-am-size~="palm:7of12"] {
+  width: calc(100% * 7 / 12) !important;
+}
+
+[data-am-size~="palm:3of5"],
+[data-am-size~="palm:6of10"] {
+  width: 60% !important;
+}
+
+[data-am-size~="palm:5of8"] {
+  width: 62.5% !important;
+}
+
+[data-am-size~="palm:2of3"],
+[data-am-size~="palm:4of6"],
+[data-am-size~="palm:8of12"] {
+  width: calc(100% * 2 / 3) !important;
+}
+
+[data-am-size~="palm:7of10"] {
+  width: 70% !important;
+}
+
+[data-am-size~="palm:3of4"],
+[data-am-size~="palm:6of8"],
+[data-am-size~="palm:9of12"] {
+  width: 75% !important;
+}
+
+[data-am-size~="palm:4of5"],
+[data-am-size~="palm:8of10"] {
+  width: 80% !important;
+}
+
+[data-am-size~="palm:5of6"],
+[data-am-size~="palm:10of12"] {
+  width: calc(100% * 5 / 6) !important;
+}
+
+[data-am-size~="palm:7of8"] {
+  width: 87.5% !important;
+}
+
+[data-am-size~="palm:9of10"] {
+  width: 90% !important;
+}
+
+[data-am-size~="palm:11of12"] {
+  width: calc(100% * 11 / 12) !important;
+}
+
