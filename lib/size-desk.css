@@ -9,15 +9,15 @@
  * Make an element shrink wrap its content.
  */
 
-@custom-media --lap screen and (min-width: 40em);
+@custom-media --desk screen and (min-width: 55em);
 
-[data-am-size~="lap:fit"], [data-am-size~="lap:fitAlt"] {
+[data-am-size~="desk:fit"], [data-am-size~="desk:fitAlt"] {
   display: block !important;
   float: left !important;
   width: auto !important;
 }
 
-[data-am-size~="lap:fitAlt"] {
+[data-am-size~="desk:fitAlt"] {
   float: right !important;
 }
 
@@ -27,7 +27,7 @@
  * N.B. This will hide overflow.
  */
 
-[data-am-size~="lap:fill"] {
+[data-am-size~="desk:fill"] {
   display: block !important;
   overflow: hidden !important;
   width: auto !important;
@@ -40,7 +40,7 @@
  * In Chrome, Safari, and Firefox it results in undesired layout.
  */
 
-[data-am-size~="lap:fillAlt"] {
+[data-am-size~="desk:fillAlt"] {
   display: table-cell !important;
   max-width: 100% !important;
   width: 10000px !important;
@@ -50,7 +50,7 @@
  * Make an element the width of its parent.
  */
 
-[data-am-size~="lap:full"] {
+[data-am-size~="desk:full"] {
   box-sizing: border-box !important;
   display: block !important;
   width: 100% !important;
@@ -65,114 +65,114 @@
  * Supports: 2, 3, 4, 5, 6, 8, 10, 12 part
  */
 
-[data-am-size~="lap:1of12"] {
+[data-am-size~="desk:1of12"] {
   width: calc(100% * 1 / 12) !important;
 }
 
-[data-am-size~="lap:1of10"] {
+[data-am-size~="desk:1of10"] {
   width: 10% !important;
 }
 
-[data-am-size~="lap:1of8"] {
+[data-am-size~="desk:1of8"] {
   width: 12.5% !important;
 }
 
-[data-am-size~="lap:1of6"],
-[data-am-size~="lap:2of12"] {
+[data-am-size~="desk:1of6"],
+[data-am-size~="desk:2of12"] {
   width: calc(100% * 1 / 6) !important;
 }
 
-[data-am-size~="lap:1of5"],
-[data-am-size~="lap:2of10"] {
+[data-am-size~="desk:1of5"],
+[data-am-size~="desk:2of10"] {
   width: 20% !important;
 }
 
-[data-am-size~="lap:1of4"],
-[data-am-size~="lap:2of8"],
-[data-am-size~="lap:3of12"] {
+[data-am-size~="desk:1of4"],
+[data-am-size~="desk:2of8"],
+[data-am-size~="desk:3of12"] {
   width: 25% !important;
 }
 
-[data-am-size~="lap:3of10"] {
+[data-am-size~="desk:3of10"] {
   width: 30% !important;
 }
 
-[data-am-size~="lap:1of3"],
-[data-am-size~="lap:2of6"],
-[data-am-size~="lap:4of12"] {
+[data-am-size~="desk:1of3"],
+[data-am-size~="desk:2of6"],
+[data-am-size~="desk:4of12"] {
   width: calc(100% * 1 / 3) !important;
 }
 
-[data-am-size~="lap:3of8"] {
+[data-am-size~="desk:3of8"] {
   width: 37.5% !important;
 }
 
-[data-am-size~="lap:2of5"],
-[data-am-size~="lap:4of10"] {
+[data-am-size~="desk:2of5"],
+[data-am-size~="desk:4of10"] {
   width: 40% !important;
 }
 
-[data-am-size~="lap:5of12"] {
+[data-am-size~="desk:5of12"] {
   width: calc(100% * 5 / 12) !important;
 }
 
-[data-am-size~="lap:1of2"],
-[data-am-size~="lap:2of4"],
-[data-am-size~="lap:3of6"],
-[data-am-size~="lap:4of8"],
-[data-am-size~="lap:5of10"],
-[data-am-size~="lap:6of12"] {
+[data-am-size~="desk:1of2"],
+[data-am-size~="desk:2of4"],
+[data-am-size~="desk:3of6"],
+[data-am-size~="desk:4of8"],
+[data-am-size~="desk:5of10"],
+[data-am-size~="desk:6of12"] {
   width: 50% !important;
 }
 
-[data-am-size~="lap:7of12"] {
+[data-am-size~="desk:7of12"] {
   width: calc(100% * 7 / 12) !important;
 }
 
-[data-am-size~="lap:3of5"],
-[data-am-size~="lap:6of10"] {
+[data-am-size~="desk:3of5"],
+[data-am-size~="desk:6of10"] {
   width: 60% !important;
 }
 
-[data-am-size~="lap:5of8"] {
+[data-am-size~="desk:5of8"] {
   width: 62.5% !important;
 }
 
-[data-am-size~="lap:2of3"],
-[data-am-size~="lap:4of6"],
-[data-am-size~="lap:8of12"] {
+[data-am-size~="desk:2of3"],
+[data-am-size~="desk:4of6"],
+[data-am-size~="desk:8of12"] {
   width: calc(100% * 2 / 3) !important;
 }
 
-[data-am-size~="lap:7of10"] {
+[data-am-size~="desk:7of10"] {
   width: 70% !important;
 }
 
-[data-am-size~="lap:3of4"],
-[data-am-size~="lap:6of8"],
-[data-am-size~="lap:9of12"] {
+[data-am-size~="desk:3of4"],
+[data-am-size~="desk:6of8"],
+[data-am-size~="desk:9of12"] {
   width: 75% !important;
 }
 
-[data-am-size~="lap:4of5"],
-[data-am-size~="lap:8of10"] {
+[data-am-size~="desk:4of5"],
+[data-am-size~="desk:8of10"] {
   width: 80% !important;
 }
 
-[data-am-size~="lap:5of6"],
-[data-am-size~="lap:10of12"] {
+[data-am-size~="desk:5of6"],
+[data-am-size~="desk:10of12"] {
   width: calc(100% * 5 / 6) !important;
 }
 
-[data-am-size~="lap:7of8"] {
+[data-am-size~="desk:7of8"] {
   width: 87.5% !important;
 }
 
-[data-am-size~="lap:9of10"] {
+[data-am-size~="desk:9of10"] {
   width: 90% !important;
 }
 
-[data-am-size~="lap:11of12"] {
+[data-am-size~="desk:11of12"] {
   width: calc(100% * 11 / 12) !important;
 }
 
